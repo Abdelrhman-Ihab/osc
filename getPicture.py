@@ -6,6 +6,9 @@ import shutil
 
 BASEURL = 'http://192.168.107.1/osc/'
 
+class ApiError(Exception):
+    pass
+
 
 data = {"name": "camera.listImages", "parameters": { "entryCount": 1} }
 
